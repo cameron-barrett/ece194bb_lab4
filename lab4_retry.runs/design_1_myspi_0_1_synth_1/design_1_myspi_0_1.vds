@@ -1,0 +1,276 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Mon May 19 10:26:27 2025
+# Process ID: 3327805
+# Current directory: /home/cameronbarrett/lab4_retry/lab4_retry.runs/design_1_myspi_0_1_synth_1
+# Command line: vivado -log design_1_myspi_0_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_myspi_0_1.tcl
+# Log file: /home/cameronbarrett/lab4_retry/lab4_retry.runs/design_1_myspi_0_1_synth_1/design_1_myspi_0_1.vds
+# Journal file: /home/cameronbarrett/lab4_retry/lab4_retry.runs/design_1_myspi_0_1_synth_1/vivado.jou
+# Running On: xilinxlab08, OS: Linux, CPU Frequency: 3200.000 MHz, CPU Physical cores: 4, Host memory: 16384 MB
+#-----------------------------------------------------------
+source design_1_myspi_0_1.tcl -notrace
+create_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 3103.062 ; gain = 2.016 ; free physical = 5265 ; free virtual = 23172
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/cameronbarrett/ip_repo/myspi_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/ece/Xilinx/Vivado/2022.1/data/ip'.
+Command: synth_design -top design_1_myspi_0_1 -part xc7a100tcsg324-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 3328413
+WARNING: [Synth 8-6901] identifier 'data_rd' is used before its declaration [/home/cameronbarrett/lab4_retry/lab4_retry.gen/sources_1/bd/design_1/ipshared/b4da/hdl/myspi_v1_0_S00_AXI.v:229]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 3107.234 ; gain = 0.000 ; free physical = 3352 ; free virtual = 21259
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_myspi_0_1' [/home/cameronbarrett/lab4_retry/lab4_retry.gen/sources_1/bd/design_1/ip/design_1_myspi_0_1/synth/design_1_myspi_0_1.v:53]
+INFO: [Synth 8-6157] synthesizing module 'myspi_v1_0' [/home/cameronbarrett/lab4_retry/lab4_retry.gen/sources_1/bd/design_1/ipshared/b4da/hdl/myspi_v1_0.v:4]
+INFO: [Synth 8-6157] synthesizing module 'myspi_v1_0_S00_AXI' [/home/cameronbarrett/lab4_retry/lab4_retry.gen/sources_1/bd/design_1/ipshared/b4da/hdl/myspi_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-226] default block is never used [/home/cameronbarrett/lab4_retry/lab4_retry.gen/sources_1/bd/design_1/ipshared/b4da/hdl/myspi_v1_0_S00_AXI.v:232]
+INFO: [Synth 8-226] default block is never used [/home/cameronbarrett/lab4_retry/lab4_retry.gen/sources_1/bd/design_1/ipshared/b4da/hdl/myspi_v1_0_S00_AXI.v:373]
+INFO: [Synth 8-6157] synthesizing module 'spi_master' [/home/cameronbarrett/lab4_retry/lab4_retry.gen/sources_1/bd/design_1/ipshared/b4da/src/spi_master.sv:3]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/cameronbarrett/lab4_retry/lab4_retry.gen/sources_1/bd/design_1/ipshared/b4da/src/spi_master.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'spi_master' (0#1) [/home/cameronbarrett/lab4_retry/lab4_retry.gen/sources_1/bd/design_1/ipshared/b4da/src/spi_master.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'spi_slave' [/home/cameronbarrett/lab4_retry/lab4_retry.gen/sources_1/bd/design_1/ipshared/b4da/src/spi_slave.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'spi_slave' (0#1) [/home/cameronbarrett/lab4_retry/lab4_retry.gen/sources_1/bd/design_1/ipshared/b4da/src/spi_slave.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'myspi_v1_0_S00_AXI' (0#1) [/home/cameronbarrett/lab4_retry/lab4_retry.gen/sources_1/bd/design_1/ipshared/b4da/hdl/myspi_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'myspi_v1_0' (0#1) [/home/cameronbarrett/lab4_retry/lab4_retry.gen/sources_1/bd/design_1/ipshared/b4da/hdl/myspi_v1_0.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_myspi_0_1' (0#1) [/home/cameronbarrett/lab4_retry/lab4_retry.gen/sources_1/bd/design_1/ip/design_1_myspi_0_1/synth/design_1_myspi_0_1.v:53]
+WARNING: [Synth 8-7137] Register clk_counter_q_reg in module spi_master has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/cameronbarrett/lab4_retry/lab4_retry.gen/sources_1/bd/design_1/ipshared/b4da/src/spi_master.sv:36]
+WARNING: [Synth 8-7137] Register data_rd_reg in module spi_master has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/cameronbarrett/lab4_retry/lab4_retry.gen/sources_1/bd/design_1/ipshared/b4da/src/spi_master.sv:37]
+WARNING: [Synth 8-7137] Register transition_counter_q_reg in module spi_master has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/cameronbarrett/lab4_retry/lab4_retry.gen/sources_1/bd/design_1/ipshared/b4da/src/spi_master.sv:38]
+WARNING: [Synth 8-87] always_comb on 'data_rd_d_reg' did not result in combinational logic [/home/cameronbarrett/lab4_retry/lab4_retry.gen/sources_1/bd/design_1/ipshared/b4da/src/spi_master.sv:72]
+WARNING: [Synth 8-7129] Port cs_n in module spi_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[2] in module myspi_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[1] in module myspi_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[0] in module myspi_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[2] in module myspi_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[1] in module myspi_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[0] in module myspi_v1_0_S00_AXI is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 3107.234 ; gain = 0.000 ; free physical = 4424 ; free virtual = 22332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 3107.234 ; gain = 0.000 ; free physical = 4424 ; free virtual = 22332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 3107.234 ; gain = 0.000 ; free physical = 4424 ; free virtual = 22332
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3107.234 ; gain = 0.000 ; free physical = 4416 ; free virtual = 22324
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3204.012 ; gain = 0.000 ; free physical = 4300 ; free virtual = 22209
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.04 . Memory (MB): peak = 3204.012 ; gain = 0.000 ; free physical = 4300 ; free virtual = 22208
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 3204.012 ; gain = 96.777 ; free physical = 4389 ; free virtual = 22297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 3204.012 ; gain = 96.777 ; free physical = 4389 ; free virtual = 22297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 3204.012 ; gain = 96.777 ; free physical = 4389 ; free virtual = 22297
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'spi_master'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              001 |                               00
+                  LOADED |                              010 |                               01
+              TRANSITION |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'spi_master'
+WARNING: [Synth 8-327] inferring latch for variable 'data_rd_d_reg' [/home/cameronbarrett/lab4_retry/lab4_retry.gen/sources_1/bd/design_1/ipshared/b4da/src/spi_master.sv:72]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 3204.012 ; gain = 96.777 ; free physical = 4381 ; free virtual = 22290
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    6 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 8     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   3 Input   32 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 4     
+	   4 Input   32 Bit        Muxes := 5     
+	   2 Input    8 Bit        Muxes := 4     
+	   2 Input    6 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 2     
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 10    
+	   3 Input    1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port s00_axi_awprot[2] in module design_1_myspi_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_awprot[1] in module design_1_myspi_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_awprot[0] in module design_1_myspi_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_arprot[2] in module design_1_myspi_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_arprot[1] in module design_1_myspi_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_arprot[0] in module design_1_myspi_0_1 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 3204.012 ; gain = 96.777 ; free physical = 4294 ; free virtual = 22207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 3204.012 ; gain = 96.777 ; free physical = 4243 ; free virtual = 22155
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 3204.012 ; gain = 96.777 ; free physical = 4242 ; free virtual = 22155
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 3204.012 ; gain = 96.777 ; free physical = 4240 ; free virtual = 22153
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 3204.012 ; gain = 96.777 ; free physical = 4244 ; free virtual = 22157
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 3204.012 ; gain = 96.777 ; free physical = 4244 ; free virtual = 22157
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 3204.012 ; gain = 96.777 ; free physical = 4244 ; free virtual = 22157
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 3204.012 ; gain = 96.777 ; free physical = 4244 ; free virtual = 22157
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 3204.012 ; gain = 96.777 ; free physical = 4243 ; free virtual = 22156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 3204.012 ; gain = 96.777 ; free physical = 4244 ; free virtual = 22157
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     1|
+|2     |LUT2 |     5|
+|3     |LUT3 |     4|
+|4     |LUT4 |    33|
+|5     |LUT5 |    38|
+|6     |LUT6 |    75|
+|7     |FDCE |    53|
+|8     |FDPE |    16|
+|9     |FDRE |   210|
+|10    |FDSE |     1|
+|11    |LD   |    32|
++------+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 3204.012 ; gain = 96.777 ; free physical = 4244 ; free virtual = 22157
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 8 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 3204.012 ; gain = 0.000 ; free physical = 4293 ; free virtual = 22206
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 3204.020 ; gain = 96.777 ; free physical = 4293 ; free virtual = 22206
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3204.020 ; gain = 0.000 ; free physical = 4397 ; free virtual = 22310
+INFO: [Netlist 29-17] Analyzing 32 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3204.020 ; gain = 0.000 ; free physical = 4336 ; free virtual = 22249
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 32 instances were transformed.
+  LD => LDCE: 32 instances
+
+Synth Design complete, checksum: 97e0bab6
+INFO: [Common 17-83] Releasing license: Synthesis
+33 Infos, 20 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:28 . Memory (MB): peak = 3204.020 ; gain = 100.957 ; free physical = 4423 ; free virtual = 22336
+INFO: [Common 17-1381] The checkpoint '/home/cameronbarrett/lab4_retry/lab4_retry.runs/design_1_myspi_0_1_synth_1/design_1_myspi_0_1.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_myspi_0_1, cache-ID = 0cea97df4bad1dea
+INFO: [Coretcl 2-1174] Renamed 4 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/cameronbarrett/lab4_retry/lab4_retry.runs/design_1_myspi_0_1_synth_1/design_1_myspi_0_1.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_myspi_0_1_utilization_synth.rpt -pb design_1_myspi_0_1_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon May 19 10:27:20 2025...
